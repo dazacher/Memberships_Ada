@@ -11,9 +11,9 @@ procedure Memberships is
    Bid_Tricks     : Integer range 0 .. 13 := 0;
    Black_Suit     : Boolean;
    Black_Or_Minor : Boolean;
-   --  NS             : Integer               := 0;
-   --  Is_Even        : Boolean;
-   --  Square_Root    : Integer;
+   NS             : Integer               := 0;
+   Is_Even        : Boolean;
+   Square_Root    : Integer;
 
 begin
    -- Subtype membership
@@ -37,6 +37,21 @@ begin
    TIO.Put_Line
      ("The suit was " &
       (if Black_Or_Minor then "Black or a Minor Suit"
-       else "Hearts,Spades or No Trumps"));
+         else "Hearts,Spades or No Trumps"));
+
+    NS      := 2;
+   Is_Even := Bid_Tricks in NS * 1 | NS * 2 | NS * 3 | NS * 4 | NS * 5 | NS * 6;
+   if Is_Even then
+      TIO.Put_Line ("It's even");
+   else
+      TIO.Put_Line ("It's odd.");
+   end if;
+
+   for Test_Num in 2 .. 1000 loop
+      Square_Root := Integer (Math.Sqrt (Float (Test_Num)));
+      if(for all Divisor in 2 .. Square_Root => Test_Num rem Divisor /= 0)then
+         TIO.Put_Line ("Prime Found: " & Integer'Image (Test_Num));
+      end if;
+   end loop;
 
 end Memberships;
