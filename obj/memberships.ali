@@ -8,16 +8,18 @@ P ZX
 RN
 RV NO_IO
 RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 
-U memberships%b		memberships.adb		673be837 NE OO SU
+U memberships%b		memberships.adb		9ae6cc65 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
 D a-except.ads		20210520051128 946f3014 ada.exceptions%s
@@ -34,8 +36,9 @@ D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D memberships.adb	20210719143232 ca270046 memberships%b
+D memberships.adb	20210719143908 37fa2414 memberships%b
 D system.ads		20210520051136 2ffa5114 system%s
+D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
 D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
@@ -61,20 +64,22 @@ X 5 a-nuelfu.ads
 18K22*Elementary_Functions[6|39] 16|2w19 6r38
 X 12 a-textio.ads
 58K13*Text_IO 725e16 16|1w10 5r28
-506U14*Put_Line 16|23s11 28s11
+506U14*Put_Line 16|23s11 28s11 34s8 37s8
 X 16 memberships.adb
-4U11*Memberships 4b11 30l5 30t16
-5K12 TIO=5:28 23r7 28r7
+4U11*Memberships 4b11 42l5 42t16
+5K12 TIO=5:28 23r7 28r7 34r4 37r4
 6K12 Math=6:38
 7E9 Suit 7e61 8r16
-7n18 Clubs{7E9} 8r24
-7n25 Diamonds{7E9}
+7n18 Clubs{7E9} 8r24 32r34 33r34
+7n25 Diamonds{7E9} 33r43
 7n35 Hearts{7E9}
-7n43 Spades{7E9}
+7n43 Spades{7E9} 32r42 33r54
 7n51 No_Trumps{7E9} 27r7
-8e4 Bid_Suit{7E9} 27r24
+8e4 Bid_Suit{7E9} 27r24 32r22 33r22
 9b4 Valid_Bid{boolean} 20m4 21m4 22r11
 10I12 Trick_Range{integer} 20r31 21r34
 11i4 Bid_Tricks{integer} 20r17 21r55
+12b4 Black_Suit{boolean} 32m4 36r11
+13b4 Black_Or_Minor{boolean} 33m4 39r11
 21i27 Bid{10I12} 21r49
 

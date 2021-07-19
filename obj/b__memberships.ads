@@ -40,7 +40,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#673be837#;
+   u00001 : constant Version_32 := 16#9ae6cc65#;
    pragma Export (C, u00001, "membershipsB");
    u00002 : constant Version_32 := 16#2e11c0b1#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -300,10 +300,14 @@ package ada_main is
    pragma Export (C, u00129, "system__finalization_rootS");
    u00130 : constant Version_32 := 16#d265cbbc#;
    pragma Export (C, u00130, "system__file_control_blockS");
-   u00131 : constant Version_32 := 16#eca5ecae#;
-   pragma Export (C, u00131, "system__memoryB");
-   u00132 : constant Version_32 := 16#76873720#;
-   pragma Export (C, u00132, "system__memoryS");
+   u00131 : constant Version_32 := 16#fd83e873#;
+   pragma Export (C, u00131, "system__concat_2B");
+   u00132 : constant Version_32 := 16#2d5a86c4#;
+   pragma Export (C, u00132, "system__concat_2S");
+   u00133 : constant Version_32 := 16#eca5ecae#;
+   pragma Export (C, u00133, "system__memoryB");
+   u00134 : constant Version_32 := 16#76873720#;
+   pragma Export (C, u00134, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -339,6 +343,8 @@ package ada_main is
    --  system.wch_jis%b
    --  system.wch_cnv%s
    --  system.wch_cnv%b
+   --  system.concat_2%s
+   --  system.concat_2%b
    --  system.exn_flt%s
    --  system.traceback%s
    --  system.traceback%b
