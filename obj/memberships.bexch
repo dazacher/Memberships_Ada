@@ -1,0 +1,20 @@
+[GENERATED OBJECT FILE]
+b__memberships.o
+[PROJECT FILES]
+C:\Users\User\Ada\Memberships_Ada\memberships.gpr
+20210719141936 a05dcf1153bdb63e69135c85927cf0c8
+[BOUND OBJECT FILES]
+C:\Users\User\Ada\Memberships_Ada\obj\memberships.o
+[GENERATED SOURCE FILES]
+b__memberships.ads
+b__memberships.adb
+b__memberships.ali
+[RESULTING OPTIONS]
+-LC:\Users\User\Ada\Memberships_Ada\obj\
+-LC:\Users\User\Ada\Memberships_Ada\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-lm
+-Wl,--stack=0x2000000
